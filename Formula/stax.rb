@@ -5,15 +5,15 @@ class Stax < Formula
   
   if OS.mac? && Hardware::CPU.intel?
     url "https://github.com/Firecrown-Media/stax/releases/download/v0.1.0/stax-darwin-amd64"
-    sha256 "bd2c8e239234bda77ec4739b85565a8272cb0584b2f3af975c1e36d203eb56eb"
+    sha256 "f12d365cb031fa36e22acb471b5339994b5de5df05287005a948ba499d9420ca"
   end
   if OS.mac? && Hardware::CPU.arm?
     url "https://github.com/Firecrown-Media/stax/releases/download/v0.1.0/stax-darwin-arm64"
-    sha256 "4ee135e41a9d533d63c381bfbe81107b20b7ae443f8b381d0273815ea5510190"
+    sha256 "582e6a29b25ddc7795cd25d9f83526d0ba41e1f23ae9063babadfcfeccfad8a0"
   end
   if OS.linux? && Hardware::CPU.intel?
     url "https://github.com/Firecrown-Media/stax/releases/download/v0.1.0/stax-linux-amd64"
-    sha256 "f3906897395963929af065bc67615f8303a9036db811b26c33ff053292c28759"
+    sha256 "230e50baee9bfea31d1076bcfc69efc8b541adece0fa6e021682c935a8b6d904"
   end
 
   def install
