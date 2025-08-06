@@ -1,19 +1,19 @@
 class Stax < Formula
   desc "CLI tool for web development with DDEV and WordPress"
   homepage "https://github.com/Firecrown-Media/stax"
-  version "0.1.0"
+  version "0.1.1"
   
   if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/Firecrown-Media/stax/releases/download/v0.1.0/stax-darwin-amd64"
-    sha256 "f12d365cb031fa36e22acb471b5339994b5de5df05287005a948ba499d9420ca"
+    url "https://github.com/Firecrown-Media/stax/releases/download/v0.1.1/stax-darwin-amd64"
+    sha256 "bc1e0b277134ea97567fde6beb727b7a720c6f9c28d9e7e14e166cf999f2a899"
   end
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/Firecrown-Media/stax/releases/download/v0.1.0/stax-darwin-arm64"
-    sha256 "582e6a29b25ddc7795cd25d9f83526d0ba41e1f23ae9063babadfcfeccfad8a0"
+    url "https://github.com/Firecrown-Media/stax/releases/download/v0.1.1/stax-darwin-arm64"
+    sha256 "150e50793e1f9c5146fda460daaacb6b9762bfc02b187ca7d046dd04e754e400"
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/Firecrown-Media/stax/releases/download/v0.1.0/stax-linux-amd64"
-    sha256 "230e50baee9bfea31d1076bcfc69efc8b541adece0fa6e021682c935a8b6d904"
+    url "https://github.com/Firecrown-Media/stax/releases/download/v0.1.1/stax-linux-amd64"
+    sha256 "5aeea3f5d4ed906d4c29ba170af973686828248ff10804190d4e2384bff1ebca"
   end
 
   def install
