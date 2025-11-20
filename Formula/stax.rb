@@ -5,7 +5,7 @@
 class Stax < Formula
   desc "Powerful CLI tool for WordPress development workflows (single site and multisite)"
   homepage "https://github.com/firecrown-media/stax"
-  version "2.14.3"
+  version "2.14.4"
   license "MIT"
 
   depends_on "ddev" => :optional
@@ -13,16 +13,16 @@ class Stax < Formula
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/firecrown-media/stax-public/releases/download/v2.14.3/stax-public_2.14.3_Darwin_x86_64.tar.gz"
-      sha256 "69af6269b787543b9454b955627ce642a9ebcc38ee11b3603037cc92f9eeeef6"
+      url "https://github.com/firecrown-media/stax-public/releases/download/v2.14.4/stax-public_2.14.4_Darwin_x86_64.tar.gz"
+      sha256 "d4f5bace0c71d423887516dd5f8057246de06a0d81d5a8db894084ee92ca71cd"
 
       def install
         bin.install "stax"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/firecrown-media/stax-public/releases/download/v2.14.3/stax-public_2.14.3_Darwin_arm64.tar.gz"
-      sha256 "e103e2038b72fa119c4ac673a8623e13759c648d4005d6df79b9ea351b5ada11"
+      url "https://github.com/firecrown-media/stax-public/releases/download/v2.14.4/stax-public_2.14.4_Darwin_arm64.tar.gz"
+      sha256 "1ddcf5c88fdfb3ed637ddc2ff2b9ae08873f796a3389456da02813a4cd541b82"
 
       def install
         bin.install "stax"
@@ -32,15 +32,15 @@ class Stax < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/firecrown-media/stax-public/releases/download/v2.14.3/stax-public_2.14.3_Linux_x86_64.tar.gz"
-      sha256 "78c8e8398f835fe2e13f79c3c6097eb3dd36ae2c127cebae2bd63e1c378ecad7"
+      url "https://github.com/firecrown-media/stax-public/releases/download/v2.14.4/stax-public_2.14.4_Linux_x86_64.tar.gz"
+      sha256 "3f2ef613a0581c049d5a29e6ca1b1e9b665328d46591e443f1db921a0ab7d491"
       def install
         bin.install "stax"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/firecrown-media/stax-public/releases/download/v2.14.3/stax-public_2.14.3_Linux_arm64.tar.gz"
-      sha256 "81ed0d40ea9a66a8327ecd4f446e15e5215f58909eace05300d93a93d9693178"
+      url "https://github.com/firecrown-media/stax-public/releases/download/v2.14.4/stax-public_2.14.4_Linux_arm64.tar.gz"
+      sha256 "429de87ab8caf81837dc96a20a65279bcebe8f35cb016a0c2535435a69eb5cde"
       def install
         bin.install "stax"
       end
